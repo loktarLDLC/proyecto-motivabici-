@@ -3,12 +3,10 @@ package com.example.steveen.motivabici;
 /**
  * Created by steveen on 03/09/2016.
  */
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.View;
 
-public class recorridos_pasados extends AppCompatActivity {
+public class recorridos_pasados extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
