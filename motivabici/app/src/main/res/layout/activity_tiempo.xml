@@ -7,13 +7,13 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.steveen.motivabici.distancia"
+    tools:context="com.example.steveen.motivabici.tiempo_del_recorrido"
     android:background="@drawable/cicl">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="DISTANCIA TOTAL RECORRIDA"
+        android:text="TIEMPO TOTAL TRANSCURRIDO"
         android:id="@+id/resumenTextView"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -27,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="la distancia recorrida fue de:"
+        android:text="El tiempo del recorrido fue de:"
         android:id="@+id/textView"
         android:textSize="30dp"
         android:textStyle="bold|italic"
@@ -36,6 +36,6 @@
         android:layout_below="@+id/resumenTextView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="68dp" />
+        android:layout_marginTop="69dp" />
 
 </RelativeLayout>
