@@ -6,7 +6,7 @@ package com.example.steveen.motivabici;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 
-public class distancia extends ActionBarActivity {
+public class distancia_recorrida extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

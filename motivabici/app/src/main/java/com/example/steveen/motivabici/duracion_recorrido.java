@@ -6,11 +6,11 @@ package com.example.steveen.motivabici;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 
-public class calorias_quemadas  extends ActionBarActivity {
+public class duracion_recorrido extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_calorias_quemadas);
+        setContentView(R.layout.activity_tiempo);
     }
 }

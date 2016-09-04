@@ -7,8 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.steveen.motivabici.calorias_quemadas"
-    android:background="@drawable/cicl">
+    tools:context=".calorias"
+    android:background="@drawable/cicla">
 
     <TextView
         android:layout_width="match_parent"

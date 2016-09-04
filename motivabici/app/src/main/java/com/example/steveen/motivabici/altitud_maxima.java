@@ -6,11 +6,12 @@ package com.example.steveen.motivabici;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 
-public class tiempo_del_recorrido extends ActionBarActivity {
+public class altitud_maxima extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tiempo);
+        setContentView(R.layout.activity_max_altitud);
     }
 }
+
