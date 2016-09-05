@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/cronometro"
-        android:textSize="90dp"
+        android:textSize="60dp"
         android:layout_centerVertical="true"
         android:layout_toLeftOf="@+id/botonPausar"
         android:layout_toStartOf="@+id/botonPausar" />
@@ -26,9 +26,10 @@
         android:id="@+id/botonIniciar"
         android:onClick="iniciarRecorrido"
         android:textSize="20dp"
-        android:layout_alignTop="@+id/botonPausar"
-        android:layout_alignLeft="@+id/cronometro"
-        android:layout_alignStart="@+id/cronometro" />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStar="true"
+        android:layout_marginTop="47dp"
+        />
 
     <Button
         android:layout_width="wrap_content"
