@@ -27,7 +27,6 @@
         android:onClick="iniciarRecorrido"
         android:textSize="20dp"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStar="true"
         android:layout_marginTop="47dp"
         />
 
