@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/cicla"
+    android:background="@color/highlighted_text_material_dark"
     tools:context="com.example.steveen.motivabici.FullscreenActivity">
 
     <!-- The primary full-screen view. This can be replaced with whatever view
@@ -14,7 +14,7 @@
         android:layout_height="463dp"
         android:gravity="center"
         android:keepScreenOn="true"
-        android:text="Proyecto Android Ingenieria de Software I"
+        android:text="MOTIVABICI"
         android:textColor="#ff9900"
         android:textSize="50sp"
         android:textStyle="bold" />
@@ -29,17 +29,17 @@
 
         <LinearLayout
             android:id="@+id/fullscreen_content_controls"
-            style="?metaButtonBarStyle"
+            style="metaButtonBarStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center_horizontal"
-            android:background="@color/black_overlay"
+            android:background="@color/black"
             android:orientation="horizontal"
             tools:ignore="UselessParent">
 
             <Button
                 android:id="@+id/dummy_button"
-                style="?metaButtonBarButtonStyle"
+                style="metaButtonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
