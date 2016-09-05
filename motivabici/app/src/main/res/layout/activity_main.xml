@@ -77,8 +77,8 @@
         android:background="#ccc5c5"
         android:hint="Contraseña"
         android:textSize="25dp"
-        android:layout_alignBaseline="@+id/iniciarSesionButton"
-        android:layout_alignBottom="@+id/iniciarSesionButton"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/edtEmail"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -90,16 +90,6 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_above="@+id/edtEmail"
-        android:layout_alignRight="@+id/iniciarSesionButton"
-        android:layout_alignEnd="@+id/iniciarSesionButton" />
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button4"
-        android:layout_alignTop="@+id/imagenBicicleta"
         android:layout_alignRight="@+id/iniciarSesionButton"
         android:layout_alignEnd="@+id/iniciarSesionButton" />
 

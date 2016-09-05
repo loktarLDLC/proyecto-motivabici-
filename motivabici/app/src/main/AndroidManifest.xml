@@ -2,10 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.steveen.motivabici">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="MotivaBici"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
@@ -15,6 +18,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ubicacion" />
+        <activity android:name=".resumen_recorrido" />
+        <activity
+            android:name=".FullscreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label=".@string/title_activity_fullscreen" />
+        <activity android:name=".altitud_maxima" />
+        <activity android:name=".calorias" />
+        <activity android:name=".distancia_recorrida" />
+        <activity android:name=".duracion_recorrido" />
+        <activity android:name=".post_login" />
+        <activity android:name=".recorrido" />
+        <activity android:name=".recorridos_anteriores" />
+        <activity android:name=".registro"></activity>
+
     </application>
 
 </manifest>
