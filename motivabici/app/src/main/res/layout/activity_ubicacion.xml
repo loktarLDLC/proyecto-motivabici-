@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.steveen.motivabici.ubicacion"
+    android:background="@drawable/cicla">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar"
+        android:id="@+id/bttIniciar"
+        android:onClick="empezarRecorrido"
+        android:layout_alignTop="@+id/bttRestablecer"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="25dp"
+        android:layout_alignBottom="@+id/bttRestablecer" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terminar"
+        android:id="@+id/bttTerminar"
+        android:onClick="TerminarRecorrido"
+        android:textSize="25dp"
+        android:layout_above="@+id/bttDistancia"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distancia Recorrida"
+        android:id="@+id/bttDistancia"
+        android:onClick="calcularDistancia"
+        android:layout_above="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/cronometro"
+        android:textSize="20dp"
+        android:layout_toLeftOf="@+id/cronometro" />
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cronometro"
+        android:textSize="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="velocidadMedia"
+        android:id="@+id/bttVelocidadMedia"
+        android:layout_alignBottom="@+id/bttDistancia"
+        android:layout_alignParentEnd="true"
+        android:onClick="velocidadMedia"
+        android:layout_alignTop="@+id/bttDistancia"
+        android:layout_toEndOf="@+id/button"
+        android:textSize="20dp"
+        android:layout_alignLeft="@+id/bttRestablecer"
+        android:layout_alignStart="@+id/bttRestablecer" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restablecer"
+        android:id="@+id/bttRestablecer"
+        android:onClick="restablecer"
+        android:textSize="23dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/cronometro"
+        android:layout_toRightOf="@+id/cronometro" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resumen"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"/>
+
+</RelativeLayout>

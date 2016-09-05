@@ -7,10 +7,91 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.steveen.motivabici.MainActivity">
+    tools:context="com.example.steveen.motivabici.MainActivity"
+    android:background="@drawable/cicla">
 
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Iniciar Sesión"
+        android:id="@+id/iniciarSesionButton"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:nestedScrollingEnabled="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrarse"
+        android:id="@+id/registrarseButton"
+        android:layout_alignTop="@+id/iniciarSesionButton"
+        android:layout_toRightOf="@+id/iniciarSesionButton"
+        android:layout_toEndOf="@+id/iniciarSesionButton"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="MOTIVABICI"
+        android:id="@+id/tituloMotivaBici"
+        android:textSize="40dp"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:elegantTextHeight="false"
+        android:layout_toRightOf="@+id/imagenBicicleta"
+        android:layout_toEndOf="@+id/imagenBicicleta"
+        android:textColor="#F51616"/>
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="E-Mail"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:background="#ccc5c5"
+        android:textSize="25dp"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/tituloMotivaBici"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <EditText
+        android:id="@+id/edtPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:imeActionId="@+id/login"
+        android:imeActionLabel="Sign in"
+        android:imeOptions="actionUnspecified"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:background="#ccc5c5"
+        android:hint="Contraseña"
+        android:textSize="25dp"
+        android:layout_alignBaseline="@+id/iniciarSesionButton"
+        android:layout_alignBottom="@+id/iniciarSesionButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imagenBicicleta"
+        android:src="@drawable/bicicleta"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/edtEmail"
+        android:layout_alignRight="@+id/iniciarSesionButton"
+        android:layout_alignEnd="@+id/iniciarSesionButton" />
+
 </RelativeLayout>
+
